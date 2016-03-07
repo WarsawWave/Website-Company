@@ -1,0 +1,437 @@
+
+
+<!doctype html>
+<html class="no-js" lang="pl-PL" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DesignWave</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Perspective Page View Navigation: Transforms the page in 3D to reveal a menu" />
+    <!-- <meta name="keywords" content="3d page, menu, navigation, mobile, perspective, css transform, web development, web design" />
+      <meta name="author" content="Codrops" /> -->
+    <!-- <link rel="shortcut icon" href="../favicon.ico"> FAVICON-->
+    <link rel='stylesheet' id='animate_css-css'  href='css/animate.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='component_css-css'  href='css/component.css' type='text/css' media='all' />
+    <link rel="stylesheet" href="style.css">
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <script src='js/modernizr.custom.js'></script>
+    <script src='js/wow.js'></script>
+    <script src='js/bootstrap-hover-dropdown.min.js'></script>
+    <script src='js/design-wave.js'></script>
+    <!-- <script src='js/jquery.waypoints.min.js'></script> -->
+    <!-- Do tego fajnego menu  -->
+    <script  src='js/menu.js'></script>
+    <script src='js/classie.js'></script>
+  </head>
+  <body style="background-position: center 0px; width: 100%; height: 100%; background-repeat: no-repeat;" >
+    <div id="perspective" class="perspective effect-airbnb">
+      <div class="per-zadzwon"><a href="tel:+48796018118"><b>ZADZWOŃ </b></a></div>
+      <!-- =Menu -->  
+      <div id="block-content" class="block-content">
+        <nav class="navbar navbar-special navbar-fixed-top  nav-main" style="z-index:100000;padding: 0px 20px;">
+          <a class="navbar-brand" href="">
+            <img src="img/logo.png" class="img-responsive dw-logo">
+            <div class="dw-brand">             
+              <span class="one">Design</span><br>
+              <span class="two">Wave</span>
+            </div>
+          </a>
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" id="showMenu"><span class="sr-only">Przełącz nawigacje</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+          </div>
+          <div class="navbar-collapse collapse" id="top-nav" aria-expanded="false">
+            <ul id="menu-primary-navigation" class="nav navbar-nav dw-menu-top">
+              <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle disabled" data-toggle="dropdown" data-hover="dropdown" data-delay="200" data-close-others="true">Usługi <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li class=""><a href="#">Grafika</a></li>
+                  <li class=""><a href="#">Aplikacje</a></li>
+                  <li class=""><a href="#">Serwis</a></li>
+                </ul>
+              </li>
+              <li class=""><a href="#">Portfolio</a></li>
+              <li class=""><a href="#">O nas</a></li>
+              <li class=""><a href="#">Kontakt</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="container-fluids">
+        <div class="wrapper">
+          <div class="start" id="start">
+            <!-- Maly slider i tlo headera -->
+              <div class="header-bg" id="content-top">
+                  <div class="mockup">
+                    <img class="mockup__img" src="img/mockup4.jpg" />
+                    <div class="mobile">
+                      <ul id="slideshow-1" class="slideshow">
+                        <li id="slide" class="slideshow__item">
+                          <p id="print-console">Jesteśmy najlepsi na świecie i wogóle...</p>
+                        </li>
+                        <li id="slide" class="slideshow__item">
+                          <p id="print-console">DesigWave- Agencja interaktywna</p>
+                        </li>
+                        <li id="slide" class="slideshow__item">
+                          <p id="print-console">Przykładowy tekst</p>
+                        </li>
+                        <li id="slide" class="slideshow__item">
+                          <p id="print-console">Apliakcje, Grafika, Serwis</p>
+                        </li>
+                        <li id="slide" class="slideshow__item">
+                          <p id="print-console">Od ogółu do szczegółu</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="screen">
+                      <ul id="slideshow-2" class="slideshow">
+                        <li id="slide" class="slideshow__item">
+                          <p id="print-console">Jesteśmy najlepsi na świecie i wogóle...</p>
+                        </li>
+                        <li id="slide" class="slideshow__item">
+                          <p id="print-console">DesigWave- Agencja interaktywna</p>
+                        </li>
+                        <li id="slide" class="slideshow__item">
+                          <p id="print-console">Przykładowy tekst</p>
+                        </li>
+                        <li id="slide" class="slideshow__item">
+                          <p id="print-console">Apliakcje, Grafika, Serwis</p>
+                        </li>
+                        <li id="slide" class="slideshow__item">
+                          <p id="print-console">Od ogółu do szczegółu</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                <script src="js/classie.js"></script>
+                <script src="js/main.js"></script>
+                <script>
+                  (function() {
+                    new Slideshow( document.getElementById( 'slideshow-1' ) );
+                    setTimeout( function() {
+                      new Slideshow( document.getElementById( 'slideshow-2' ) );
+                    }, 1750 );
+                  
+                    /* Mockup responsiveness */
+                    var body = docElem = window.document.documentElement,
+                      wrap = document.getElementById( 'wrap' ),
+                      mockup = wrap.querySelector( '.mockup' ),
+                      mockupWidth = mockup.offsetWidth;
+                  
+                    scaleMockup();
+                  
+                    function scaleMockup() {
+                      var wrapWidth = wrap.offsetWidth,
+                        val = wrapWidth / mockupWidth;
+                  
+                      mockup.style.transform = 'scale3d(' + val + ', ' + val + ', 1)';
+                    }
+                    
+                    window.addEventListener( 'resize', resizeHandler );
+                  
+                    function resizeHandler() {
+                      function delayed() {
+                        resize();
+                        resizeTimeout = null;
+                      }
+                      if ( typeof resizeTimeout != 'undefined' ) {
+                        clearTimeout( resizeTimeout );
+                      }
+                      resizeTimeout = setTimeout( delayed, 50 );
+                    }
+                  
+                    function resize() {
+                      scaleMockup();
+                    }
+                  })();
+                </script>                            
+              </div>
+            <a class="link-icon link-icon-content" href="#"><i class="glyphicon glyphicon-chevron-down"></i></a> 
+          </div>
+          <!-- TREŚĆ -->
+          <div id="content">
+            <!--[if lt IE 8]>
+            <div class="alert alert-warning">
+              You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.       
+            </div>
+            <![endif]-->
+            <!-- Prezentacja dla roznych urzadzen -->
+            <div class="hidden-xs container-fluid nf-box box-tablet" style="margin-top:35px;">
+              <div class="col-sm-6 col-md-4">
+                <div class="hidden-xs visible-sm visible-md visible-lg">
+                  <div class="textwidget">
+                    <div class="text-right wow fadeInLeft">
+                      <a class="" href="oferta_firmy.html">
+                        <h3 class="">Strony firmowe </h3>
+                      </a>
+                      <p>
+                        Stworzę dla Ciebie wizytówkę firmy, która stanie się kluczem do sukcesu dla Twojej działalności. Lorem ipsum dolor sit amet, consectetur a Daecati alias ratione est fugit eaque nisi, ipsum cumque, aut modi blanditiis unde explicabo rerum. Vitae!
+                      </p>
+                      <a class="btn-czytajwiecej" href="oferta_firmy.html">czytaj więcej...</a>
+                    </div>
+                    <div class="text-right wow fadeInLeft">
+                      <a class="" href="oferta_blogi.html">
+                        <h3 class="">Blogi</h3>
+                      </a>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, voluptate laborum. Cumque aperiam ducimus maxime, facere corporis distinctio minima animi, consequuntur, fugiat obcaecati et maiores amet cupiditate iusto impedit consequatur.
+                      </p>
+                      <a class="btn-czytajwiecej" href="#">czytaj więcej...</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="visible-xs hidden-sm hidden-md hidden-lg">
+                  <div class="">
+                    <div class="textwidget">
+                      <div class="text-right wow fadeInLeft">
+                        <a class="" href="oferta_firmy.html">
+                          <h3 class="">Strony firmowe </h3>
+                        </a>
+                        <p>
+                          Stworzę dla Ciebie wizytówkę firmy, która stanie się kluczem do sukcesu dla Twojej działalności. Lorem ipsum dolor sit amet, consectetur adi Diatur ipsum quas, illum, quam aperiam nemo repellat! Quia asperiores placeat sunt explicabo nisi minima. Optio.
+                        </p>
+                        <a class="btn-czytajwiecej" href="oferta_firmy.html">czytaj więcej...</a>
+                      </div>
+                      <div class="text-right wow fadeInLeft">
+                        <a class="" href="oferta_blogi.html">
+                          <h3 class="">Blogi</h3>
+                        </a>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit libero, repellat harum similique exercitationem ea ut quibusdam, assumenda dolores eos, sed facilis blanditiis necessitatibus fugiat iure. Temporibus asperiores harum ipsa?
+                        </p>
+                        <a class="btn-czytajwiecej" href="#">czytaj więcej...</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="visible-xs hidden-sm hidden-md hidden-lg">
+                  <div class="">
+                    <div class="textwidget">
+                      <div class="wow fadeInRight">
+                        <a class="" href="oferta_blogi.html">
+                          <h3 class=""> Optymalizacja SEO </h3>
+                        </a>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ullam, quibusdam ipsam laborum, ab voluptatem! Architecto dolorem accusantium, porro fugit modi distinctio magni soluta facere adipisci sed, molestias dicta alias!
+                        </p>
+                        <div class="text-right">
+                          <a class="btn-czytajwiecej" href="#">czytaj więcej...</a>
+                        </div>
+                      </div>
+                      <div class="wow fadeInRight">
+                        <a class="" href="#">
+                          <h3 class="">  Sklep internetowy </h3>
+                        </a>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis voluptatum, officiis ratione quas libero repellat soluta incidunt quia fugiat odit praesentium ex ad voluptatem dolorum cum, aspernatur velit repudiandae! Aperiam!
+                        </p>
+                        <div class="text-right">
+                          <a class="btn-czytajwiecej" href="#">czytaj więcej...</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hidden-xs hidden-sm col-md-4"><img src="https://www.netfactory.pl/wp-content/themes/roots-nf/assets/img/tlo-tablet-4.png" class="img-tablet img-responsive wow zoomIn"></div>
+              <div class="hidden-xs col-sm-6 col-md-4">
+                <div class="">
+                  <div class="textwidget">
+                    <div class="wow fadeInRight">
+                      <a class="" href="oferta_blogi.html">
+                        <h3 class=""> Optymalizacja SEO </h3>
+                      </a>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam saepe nobis, voluptates quis molestias magni quisquam. Corrupti temporibus, alias deleniti facilis reiciendis. Consequuntur et at dolor commodi itaque totam, ipsa!
+                      </p>
+                      <div class="text-right">
+                        <a class="btn-czytajwiecej" href="#">czytaj więcej...</a>
+                      </div>
+                    </div>
+                    <div class="wow fadeInRight">
+                      <a class="" href="#">
+                        <h3 class="">  Sklep internetowy </h3>
+                      </a>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est adipisci nemo pariatur officia facere magni id, debitis itaque, officiis, perferendis voluptatibus quasi quo voluptate ea repellat cum maxime ab quibusdam.
+                      </p>
+                      <div class="text-right">
+                        <a class="btn-czytajwiecej" href="#">czytaj więcej...</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hidden-xs hidden-sm hidden-md hidden-lg"><img src="https://www.netfactory.pl/wp-content/themes/roots-nf/assets/img/tlo-tablet-4.png" class="img-tablet img-responsive" style="max-width: 129%;"></div>
+            </div>
+            <!-- O firmie -->
+            <div class="container-fluid nf-box-2" style="background-image:url('http://www.chmural.pl/wp-content/uploads/2015/05/chmural-strony-www22.jpg'); background-repeat: no-repeat; background-size: cover; margin:15px 0 15px 0;" data-img-width="1600" data-img-height="1064" data-diff="100" id="desc">
+              <div class="container nf-box-2-bg">
+                <div class="row">
+                  <article>
+                    <div class="nf-box-content col-xs-12 col-lg-7 nopadding wow fadeInLeft">
+                      <header>
+                        <h1 class="h1title wow fadeInRight">O MOBILEDESIGN</h1>
+                      </header>
+                      <div class="entry-content">
+                        <p><strong>Nazwa</strong> ttempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                        <p><strong>Tworzymy strony www</strong>, <strong>oferujemy tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</strong>, <strong>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</strong>. <strong>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</strong>. tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                        <p>Jesteśmy tu dla Ciebie!</p>
+                      </div>
+                    </div>
+                    <div class=" hidden-xs nf-box-content-men col-xs-12 col-lg-5 nopadding wow fadeInRight"></div>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <!-- Ostatnie projekty i Portfolio -->
+            <div class="contaner-fluid nf-box nopadding nf-realizacje wow lightSpeedIn">
+              <div class="row">
+                <div class="container nf-realizacje text-center">
+                  <h2 class="wow zoomIn">OSTATNIE REALIZACJE</h2>
+                  <div class="info hidden-xs wow fadeInLeft"> 
+                    Zobacz niektóre, z wielu projektów jakie mieliśmy przyjemność realizować.
+                  </div>
+                  <a class="btn-main btn-white wow fadeInRight" href="/portfolio/">Zobacz całe portfolio</a>    
+                </div>
+              </div>
+            </div>
+            <div class="container nf-box" id="portfolio">
+              <div class="nf-portfolio-new">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6 col-md-4 package wow zoomIn">
+                    <a href="#" class="title-box fade-in middle overlay" data-title="TwojProjekt.pl" title="TwojProjekt.pl">
+                      <div style="position: relative;">
+                        <div class="div-img" style="background-image:url(#); "></div>
+                        <div class="caption">
+                          <span class="link-to-project glyphicon glyphicon-link" aria-hidden="true"></span>
+                          <div class="info-link-project">SZCZEGÓŁY PROJEKTU</div>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="name-realizacja">Twoj Projekt</div>
+                    <div class="link-realizacja">TwojProjekt.pl</div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-4 package wow zoomIn">
+                    <a href="#" class="title-box fade-in middle overlay" data-title="TwojProjekt.pl" title="TwojProjekt.pl">
+                      <div style="position: relative;">
+                        <div class="div-img" style="background-image:url(#); "></div>
+                        <div class="caption">
+                          <span class="link-to-project glyphicon glyphicon-link" aria-hidden="true"></span>
+                          <div class="info-link-project">SZCZEGÓŁY PROJEKTU</div>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="name-realizacja">Twoj Projekt</div>
+                    <div class="link-realizacja">TwojProjekt.pl</div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-4 package wow zoomIn">
+                    <a href="#" class="title-box fade-in middle overlay" data-title="TwojProjekt.pl" title="TwojProjekt.pl">
+                      <div style="position: relative;">
+                        <div class="div-img" style="background-image:url(#); "></div>
+                        <div class="caption">
+                          <span class="link-to-project glyphicon glyphicon-link" aria-hidden="true"></span>
+                          <div class="info-link-project">SZCZEGÓŁY PROJEKTU</div>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="name-realizacja">Twoj Projekt</div>
+                    <div class="link-realizacja">TwojProjekt.pl</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid nopadding nf-box nf-misja-cont">
+              <!-- Kient jest dla nas najwazniejszy, nasza misja, bla, bla, bla -->
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-7 col-lg-offset-5 nf-misja">
+                    <h2 class="wow fadeInRight">Klient jest dla nas najważniejszy</h2>
+                    <div class="info wow fadeInLeft">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aliquam accusantium aliquid esse ipsam voluptatibus iure nemo fugiat dolor, repellendus consequuntur adipisci commodi ut repellat eveniet vel. Dolores, itaque, fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro quia totam eum inventore iste magni. Optio ad ab excepturi molestiae maiores repellat dicta blanditiis amet adipisci architecto, temporibus error illum.    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid nf-box" id="misja">
+              <div class="container nf-nasza-misja text-center">
+                <div class="row">
+                  <h2 class="wow fadeInRight">Nasza misja</h2>
+                  <div class="info wow fadeInLeft">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ex corporis quidem dolore, aut inventore necessitatibus rerum. Repellendus porro vitae, laboriosam eius nemo reprehenderit. Deleniti in odio aliquid dolor ullam.   
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Kontakt, formularz, mapka, adres etc. -->
+            <div class="container-fluid nf-kontakt-cont nopadding" style="padding-bottom: 30px;">
+              <div class="container nf-kontakt text-center" style="">
+                <h2 class="wow fadeInRight">Kontakt</h2>
+                <div class="info wow fadeInLeft">
+                  Jeśli masz jakieś pytania, wątpliwości, propozycje współpracy, lub po prostu czegoś od nas potrzebujesz, śmiało skontaktuj się z nami. Jesteśmy otwarci na nawiązywanie różnego rodzaju współpracy i na nowe pomysły.
+                </div>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-12 col-lg-4 wow fadeInLeft">
+                    <h3>Napisz do Nas</h3>
+                    <p>Tu będzie formularz kontaktowy</p>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-lg-4 wow fadeInUp">
+                    <h3>Nasza siedziba</h3>
+                    <div>
+                      <div><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> ul. Lorem ipsum xx, xx-yyy Warszawa</div>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1222.1401504480418!2d20.912118199999995!3d52.22012510000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecb2fd3e93b03%3A0xb8004e52239a732a!2sStrzelc%C3%B3w+1A%2C+01-348+Warszawa!5e0!3m2!1spl!2spl!4v1428649804905" width="100%" height="172" frameborder="0" style="border:0"></iframe>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-lg-4 wow fadeInRight">
+                    <h3>Kontakt</h3>
+                    <div>
+                      <div><i class="fa fa-envelope"></i> <a href="mailto:danielsiwek95@gmail.com">danielsiwek95@gmail.com</a></div>
+                      <div><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span><a href="tel:+48796018118">796 018 118</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span><a href="tel:+48796018118">796 018 118</a></div>
+                    </div>
+                    <h3 style="margin-top: 36px;">Dane firmy</h3>
+                    <div>
+                      Nazwa Daniel Siwek<br>
+                      ul. Lorem Ipsum xx xx-yyy Warszawa<br>
+                      Tel. xxx-xxx-xxx<br>
+                      E-mail: danielsiwek95@gmail.com<br>               
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Partnerzy - Stopka -->
+            <div class="container-fluid stopka nopadding hidden-xs">
+              <div class="container wow fadeInRight">
+                <div class="partnerzy">
+                  <h3 class="nasi-partnerzy">Nasi Partnerzy</h3>
+                  <div class="textwidget">
+                    <!-- Miejsce na partnerów -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <footer class="content-info" role="contentinfo">
+              <div class="container">
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src='js/modernizr.js'></script>
+    <nav class="outer-nav left vertical">
+      <a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
+      <a href="onas.html">O Nas</a>
+      <a href="oferta.html">Nasza Oferta</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="cennik.html">Cennik</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+    <a href="#" class="scrollToTop" style="display: inline;"><span class="glyphicon glyphicon-circle-arrow-up" aria-hidden="true"></span></a>
+  </body>
+</html>
+
