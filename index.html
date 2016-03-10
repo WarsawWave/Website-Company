@@ -1,5 +1,3 @@
-
-
 <!doctype html>
 <html class="no-js" lang="pl-PL" prefix="og: http://ogp.me/ns#">
   <head>
@@ -7,16 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>DesignWave</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="http//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Perspective Page View Navigation: Transforms the page in 3D to reveal a menu" />
     <!-- <meta name="keywords" content="3d page, menu, navigation, mobile, perspective, css transform, web development, web design" />
       <meta name="author" content="Codrops" /> -->
     <!-- <link rel="shortcut icon" href="../favicon.ico"> FAVICON-->
-    <link rel='stylesheet' id='animate_css-css'  href='css/animate.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='component_css-css'  href='css/component.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/animate.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/component.css' type='text/css' media='all' />
     <link rel="stylesheet" href="style.css">
+
+    <!-- Social Icons -->
+    <link href="css/leaf.css" rel="stylesheet">
+    <link href="css/socialIconsFont/creativeverse_social-codes.css" rel="stylesheet">
+    <link href="css/socialIconsFont/creativeverse_social-embedded.css" rel="stylesheet">
+    <link href="css/socialIconsFont/creativeverse_social-ie7.css" rel="stylesheet">
+    <link href="css/socialIconsFont/creativeverse_social-ie7-codes.css" rel="stylesheet">
+
     <script src="js/jquery-1.12.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
     <script src='js/modernizr.custom.js'></script>
     <script src='js/wow.js'></script>
     <script src='js/bootstrap-hover-dropdown.min.js'></script>
@@ -54,8 +61,20 @@
                 </ul>
               </li>
               <li class=""><a href="#">Portfolio</a></li>
+              <li class=""><a href="#">Blog</a></li>
               <li class=""><a href="#">O nas</a></li>
               <li class=""><a href="#">Kontakt</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right cv-social-media">
+              <a class="animated fadeIn" href="#"><li id="facebook" class="icon-facebook"></li></a>
+              <a class="animated fadeIn" href="#"><li id="twitter" class="icon-twitter"></li></a>
+              <a class="animated fadeIn" href="#"><li id="skype" class="icon-skype"></li></a>
+              <a class="animated fadeIn" href="#"><li id="pinterest" class="fa fa-instagram" style="padding-left:10px;font-size:26px;"></li></a>
+              <div class="nav-contact">               
+                <p>Tel. 555-555-55</p>
+                <p>office@DesignWave.pl</p>
+                <h1>Warszawa</h1>
+              </div>
             </ul>
           </div>
         </nav>
@@ -65,47 +84,49 @@
           <div class="start" id="start">
             <!-- Maly slider i tlo headera -->
               <div class="header-bg" id="content-top">
+                <div id="wrap" class="wrap">
                   <div class="mockup">
                     <img class="mockup__img" src="img/mockup4.jpg" />
                     <div class="mobile">
                       <ul id="slideshow-1" class="slideshow">
                         <li id="slide" class="slideshow__item">
-                          <p id="print-console">Jesteśmy najlepsi na świecie i wogóle...</p>
+                          <p>Jesteśmy najlepsi na świecie i wogóle...</p>
                         </li>
                         <li id="slide" class="slideshow__item">
-                          <p id="print-console">DesigWave- Agencja interaktywna</p>
+                          <p>DesigWave- Agencja interaktywna</p>
                         </li>
                         <li id="slide" class="slideshow__item">
-                          <p id="print-console">Przykładowy tekst</p>
+                          <p>Przykładowy tekst</p>
                         </li>
                         <li id="slide" class="slideshow__item">
-                          <p id="print-console">Apliakcje, Grafika, Serwis</p>
+                          <p>Apliakcje, Grafika, Serwis</p>
                         </li>
                         <li id="slide" class="slideshow__item">
-                          <p id="print-console">Od ogółu do szczegółu</p>
+                          <p>Od ogółu do szczegółu</p>
                         </li>
                       </ul>
                     </div>
                     <div class="screen">
                       <ul id="slideshow-2" class="slideshow">
                         <li id="slide" class="slideshow__item">
-                          <p id="print-console">Jesteśmy najlepsi na świecie i wogóle...</p>
+                          <p>Jesteśmy najlepsi na świecie i wogóle...</p>
                         </li>
                         <li id="slide" class="slideshow__item">
-                          <p id="print-console">DesigWave- Agencja interaktywna</p>
+                          <p>DesigWave- Agencja interaktywna</p>
                         </li>
                         <li id="slide" class="slideshow__item">
-                          <p id="print-console">Przykładowy tekst</p>
+                          <p>Przykładowy tekst</p>
                         </li>
                         <li id="slide" class="slideshow__item">
-                          <p id="print-console">Apliakcje, Grafika, Serwis</p>
+                          <p>Apliakcje, Grafika, Serwis</p>
                         </li>
                         <li id="slide" class="slideshow__item">
-                          <p id="print-console">Od ogółu do szczegółu</p>
+                          <p>Od ogółu do szczegółu</p>
                         </li>
                       </ul>
                     </div>
                   </div>
+                </div>
                 <script src="js/classie.js"></script>
                 <script src="js/main.js"></script>
                 <script>
@@ -159,133 +180,86 @@
             </div>
             <![endif]-->
             <!-- Prezentacja dla roznych urzadzen -->
-            <div class="hidden-xs container-fluid nf-box box-tablet" style="margin-top:35px;">
-              <div class="col-sm-6 col-md-4">
-                <div class="hidden-xs visible-sm visible-md visible-lg">
-                  <div class="textwidget">
-                    <div class="text-right wow fadeInLeft">
-                      <a class="" href="oferta_firmy.html">
-                        <h3 class="">Strony firmowe </h3>
-                      </a>
-                      <p>
-                        Stworzę dla Ciebie wizytówkę firmy, która stanie się kluczem do sukcesu dla Twojej działalności. Lorem ipsum dolor sit amet, consectetur a Daecati alias ratione est fugit eaque nisi, ipsum cumque, aut modi blanditiis unde explicabo rerum. Vitae!
-                      </p>
-                      <a class="btn-czytajwiecej" href="oferta_firmy.html">czytaj więcej...</a>
-                    </div>
-                    <div class="text-right wow fadeInLeft">
-                      <a class="" href="oferta_blogi.html">
-                        <h3 class="">Blogi</h3>
-                      </a>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, voluptate laborum. Cumque aperiam ducimus maxime, facere corporis distinctio minima animi, consequuntur, fugiat obcaecati et maiores amet cupiditate iusto impedit consequatur.
-                      </p>
-                      <a class="btn-czytajwiecej" href="#">czytaj więcej...</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="visible-xs hidden-sm hidden-md hidden-lg">
-                  <div class="">
-                    <div class="textwidget">
-                      <div class="text-right wow fadeInLeft">
-                        <a class="" href="oferta_firmy.html">
-                          <h3 class="">Strony firmowe </h3>
-                        </a>
-                        <p>
-                          Stworzę dla Ciebie wizytówkę firmy, która stanie się kluczem do sukcesu dla Twojej działalności. Lorem ipsum dolor sit amet, consectetur adi Diatur ipsum quas, illum, quam aperiam nemo repellat! Quia asperiores placeat sunt explicabo nisi minima. Optio.
-                        </p>
-                        <a class="btn-czytajwiecej" href="oferta_firmy.html">czytaj więcej...</a>
-                      </div>
-                      <div class="text-right wow fadeInLeft">
-                        <a class="" href="oferta_blogi.html">
-                          <h3 class="">Blogi</h3>
-                        </a>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit libero, repellat harum similique exercitationem ea ut quibusdam, assumenda dolores eos, sed facilis blanditiis necessitatibus fugiat iure. Temporibus asperiores harum ipsa?
-                        </p>
-                        <a class="btn-czytajwiecej" href="#">czytaj więcej...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="visible-xs hidden-sm hidden-md hidden-lg">
-                  <div class="">
-                    <div class="textwidget">
-                      <div class="wow fadeInRight">
-                        <a class="" href="oferta_blogi.html">
-                          <h3 class=""> Optymalizacja SEO </h3>
-                        </a>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ullam, quibusdam ipsam laborum, ab voluptatem! Architecto dolorem accusantium, porro fugit modi distinctio magni soluta facere adipisci sed, molestias dicta alias!
-                        </p>
-                        <div class="text-right">
-                          <a class="btn-czytajwiecej" href="#">czytaj więcej...</a>
+            <div id="tabs" style="margin-top:30px;">
+              <div class="container-fluid oferta" id="oferta" style="margin-top:35px;">
+                  <div class="col-xs-12 col-lg-4" id="test">
+                    <div class="box">
+                      <a href="#tabs-1">
+                        <div class="circle grafika">
+                          <span class="glyphicon glyphicon-home"></span>
                         </div>
-                      </div>
-                      <div class="wow fadeInRight">
-                        <a class="" href="#">
-                          <h3 class="">  Sklep internetowy </h3>
-                        </a>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis voluptatum, officiis ratione quas libero repellat soluta incidunt quia fugiat odit praesentium ex ad voluptatem dolorum cum, aspernatur velit repudiandae! Aperiam!
-                        </p>
-                        <div class="text-right">
-                          <a class="btn-czytajwiecej" href="#">czytaj więcej...</a>
+                        <h1>Grafika</h1>
+                      </a>
+                    </div>
+                    <div class="box">
+                      <a href="#tabs-2">
+                        <div class="circle strony-www">
+                          <span class="glyphicon glyphicon-home"></span>
                         </div>
-                      </div>
+                        <h1>Strony Internetowe</h1>
+                      </a>
                     </div>
+                  </div>
+                  <div class="col-xs-12 col-lg-4">
+                    <div class="box">
+                      <a href="#tabs-3">
+                        <div class="circle identyfikacja">
+                          <span class="glyphicon glyphicon-home"></span>
+                        </div>
+                        <h1>Identyfikacja Wizualna</h1>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-lg-4">
+                    <div class="box">
+                      <a href="#tabs-4">
+                        <div class="circle serwis">
+                          <span class="glyphicon glyphicon-home"></span>
+                        </div>
+                        <h1>Serwis</h1>
+                      </a>
+                    </div>
+                    <div class="box">
+                      <a href="#tabs-5">
+                        <div class="circle allegro">
+                          <span class="glyphicon glyphicon-home"></span>
+                        </div>
+                        <h1>Szablony Allegro</h1>
+                      </a>
+                    </div>
+                  </div>
+              </div>           
+              <div class="container-fluid" id="oferta-sm" style="display:none">
+                <div class="col-xs-12 col-lg-3" style="border-right:1px solid rgb(206, 203, 203)">
+                  <div class="col-lg-12" id="checked">                    
+                  </div>
+                  <div id="other">                                    
+                  </div> 
+                </div>
+                <div class="col-xs-12 col-lg-9">
+                  <div id="tabs-1">
+                    <h1>Opis Grafiki</h1>
+                    <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci.</p>
+                  </div>
+                  <div id="tabs-2">
+                    <h1>Opis Stron WWW</h1>
+                    <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc.</p>
+                  </div>
+                  <div id="tabs-3">
+                    <h1>Opis Identyfikacji Wizualnej</h1>
+                    <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+                  </div>
+                  <div id="tabs-4">
+                    <h1>Opis Serwisu</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet atque repellat pariatur ut, explicabo, sed accusamus assumenda doloremque beatae similique totam quos sunt praesentium debitis, veritatis a exercitationem asperiores delectus?</p>
+                  </div>
+                  <div id="tabs-5">
+                    <h1>Opis Szablonów Allegro</h1>
+                    <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim sed cumque dolores quasi quaerat unde id provident nihil sunt amet accusamus similique, vero quia tenetur, doloremque, voluptates necessitatibus dolore, laborum.</span><span>Rem asperiores suscipit aspernatur nam, maiores reprehenderit ipsam cupiditate, enim ex nobis voluptates iure possimus hic porro quos minima vero magnam dolores tempora, ut, quibusdam soluta repudiandae minus voluptatibus dolore.</span></p>
                   </div>
                 </div>
               </div>
-              <div class="hidden-xs hidden-sm col-md-4"><img src="https://www.netfactory.pl/wp-content/themes/roots-nf/assets/img/tlo-tablet-4.png" class="img-tablet img-responsive wow zoomIn"></div>
-              <div class="hidden-xs col-sm-6 col-md-4">
-                <div class="">
-                  <div class="textwidget">
-                    <div class="wow fadeInRight">
-                      <a class="" href="oferta_blogi.html">
-                        <h3 class=""> Optymalizacja SEO </h3>
-                      </a>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam saepe nobis, voluptates quis molestias magni quisquam. Corrupti temporibus, alias deleniti facilis reiciendis. Consequuntur et at dolor commodi itaque totam, ipsa!
-                      </p>
-                      <div class="text-right">
-                        <a class="btn-czytajwiecej" href="#">czytaj więcej...</a>
-                      </div>
-                    </div>
-                    <div class="wow fadeInRight">
-                      <a class="" href="#">
-                        <h3 class="">  Sklep internetowy </h3>
-                      </a>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est adipisci nemo pariatur officia facere magni id, debitis itaque, officiis, perferendis voluptatibus quasi quo voluptate ea repellat cum maxime ab quibusdam.
-                      </p>
-                      <div class="text-right">
-                        <a class="btn-czytajwiecej" href="#">czytaj więcej...</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="hidden-xs hidden-sm hidden-md hidden-lg"><img src="https://www.netfactory.pl/wp-content/themes/roots-nf/assets/img/tlo-tablet-4.png" class="img-tablet img-responsive" style="max-width: 129%;"></div>
-            </div>
-            <!-- O firmie -->
-            <div class="container-fluid nf-box-2" style="background-image:url('http://www.chmural.pl/wp-content/uploads/2015/05/chmural-strony-www22.jpg'); background-repeat: no-repeat; background-size: cover; margin:15px 0 15px 0;" data-img-width="1600" data-img-height="1064" data-diff="100" id="desc">
-              <div class="container nf-box-2-bg">
-                <div class="row">
-                  <article>
-                    <div class="nf-box-content col-xs-12 col-lg-7 nopadding wow fadeInLeft">
-                      <header>
-                        <h1 class="h1title wow fadeInRight">O MOBILEDESIGN</h1>
-                      </header>
-                      <div class="entry-content">
-                        <p><strong>Nazwa</strong> ttempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-                        <p><strong>Tworzymy strony www</strong>, <strong>oferujemy tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</strong>, <strong>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</strong>. <strong>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</strong>. tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-                        <p>Jesteśmy tu dla Ciebie!</p>
-                      </div>
-                    </div>
-                    <div class=" hidden-xs nf-box-content-men col-xs-12 col-lg-5 nopadding wow fadeInRight"></div>
-                  </article>
-                </div>
-              </div>
+              <hr>
             </div>
             <!-- Ostatnie projekty i Portfolio -->
             <div class="contaner-fluid nf-box nopadding nf-realizacje wow lightSpeedIn">
@@ -389,15 +363,15 @@
                   <div class="col-xs-12 col-sm-12 col-lg-4 wow fadeInRight">
                     <h3>Kontakt</h3>
                     <div>
-                      <div><i class="fa fa-envelope"></i> <a href="mailto:danielsiwek95@gmail.com">danielsiwek95@gmail.com</a></div>
-                      <div><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span><a href="tel:+48796018118">796 018 118</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span><a href="tel:+48796018118">796 018 118</a></div>
+                      <div><i class="fa fa-envelope"></i> <a href="mailto:office@DesignWave.pl">office@DesignWave.pl</a></div>
+                      <div><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span><a href="tel:+48555555555"> 555 555 555</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span><a href="tel:+48333333333"> 333 333 333</a></div>
                     </div>
                     <h3 style="margin-top: 36px;">Dane firmy</h3>
                     <div>
-                      Nazwa Daniel Siwek<br>
+                      DesginWave<br>
                       ul. Lorem Ipsum xx xx-yyy Warszawa<br>
-                      Tel. xxx-xxx-xxx<br>
-                      E-mail: danielsiwek95@gmail.com<br>               
+                      Tel. 555-555-555<br>
+                      E-mail: office@DesignWave.pl<br>               
                     </div>
                   </div>
                 </div>

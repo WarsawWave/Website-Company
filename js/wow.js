@@ -548,17 +548,6 @@ $(document).ready(function() {
         $('html, body').show();
     }
 });
-$(document).ready(function(){
-  $(window).bind('scroll', function() {
-    var distance = 100;
-    if ($(window).scrollTop() > distance) {
-      $('nav').addClass('scrolled');
-    }
-    else {
-      $('nav').removeClass('scrolled');
-    }
-  });
-});
 
 wow = new WOW(
         {
