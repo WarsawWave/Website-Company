@@ -508,47 +508,6 @@
 
 }).call(this);
 
-  
-  //Check to see if the window is top if not then display button
-  $(window).scroll(function(){
-    if ($(this).scrollTop() > 500) {
-      $('.scrollToTop').fadeIn();
-    } else {
-      $('.scrollToTop').fadeOut();
-    }
-  });
-  
-  //Click event to scroll to top
-  $('.scrollToTop').click(function(){
-    $('html, body').animate({scrollTop : 0},1500);
-    return false;
-  });
-  
-$(document).ready(function() {
-$(".link-icon").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#desc").offset().top-110
-    }, 2000);
-});
-});
-
-
-$(document).ready(function() {
-    $('html, body').hide();
-
-    if (window.location.hash) {
-        setTimeout(function() {
-            $('html, body').scrollTop(0).show();
-            $('html, body').animate({
-                scrollTop: $(window.location.hash).offset().top -110
-                }, 1000)
-        }, 0);
-    }
-    else {
-        $('html, body').show();
-    }
-});
-
 wow = new WOW(
         {
           boxClass:     'wow',      // default

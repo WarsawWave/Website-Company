@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 
-// Mechanizm O Nas
+	// Mechanizm O Nas
 	function first (par) {
 		$( '#oferta' ).css({ 'display': 'none' });
 		$( '#oferta-sm' ).css({ 'display': 'block' });
@@ -72,8 +72,8 @@ $( document ).ready(function() {
 		});
 	});
 
-// Po kilku csrollach
-	$(window).bind('scroll', function() {
+	// Dodanie klasy do nawigacji
+	function setScrolledNav () {  
 		var distance = 100;
 		if ($(window).scrollTop() > distance) {
 		  $('nav').addClass('scrolled');
@@ -81,10 +81,32 @@ $( document ).ready(function() {
 		else {
 		  $('nav').removeClass('scrolled');
 		}
+	};
+	setScrolledNav();
+	$(window).bind('scroll', function() {
+		setScrolledNav();
 	});
 
+	//Check to see if the window is top if not then display button
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 500) {
+		  $('.scrollToTop').fadeIn();
+		} else {
+		  $('.scrollToTop').fadeOut();
+		}
+	});
+
+	//Click event to scroll to top
 	$(document).on("click", ".scrollToTop", function() {
 		$("html, body").animate({ scrollTop: 0 }, "slow");
+	});
+
+	$(document).ready(function() {
+		$(".link-icon").click(function() {
+		$('html, body').animate({
+		    scrollTop: $("#portfolio").offset().top -( $( 'nav' ).height() + 20 )
+		}, 2000);
+		});
 	});
 
 });

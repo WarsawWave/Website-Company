@@ -370,6 +370,11 @@ a:hover { color: #acacac; text-decoration:underline;}
 	opacity: 0.9;
 }
 
+.box h1 {
+	margin: 0px;
+	padding-top: 20px;
+}
+
 .circle {
 	height: 300px;
 	width: 300px;
@@ -394,6 +399,7 @@ a:hover { color: #acacac; text-decoration:underline;}
 .box-sm {
 	text-align: center;
 	margin-bottom: 50px;
+	padding: 0;
 }
 
 .box-sm a:hover {
@@ -423,7 +429,7 @@ a:hover { color: #acacac; text-decoration:underline;}
 }
 
 .box-sm h1 {
-	margin-top: 10px;
+	margin-top: 0px;
 	font-size: 14px;
 }
 
@@ -506,157 +512,29 @@ a:hover { color: #acacac; text-decoration:underline;}
 
 /* PORTFOLIO */
 
-.nf-box {margin-bottom:50px;}
-
-.nf-box .h1title {
-	color: #ff9200;
-	text-transform: uppercase;
-	font-size: 25px;
-	font-weight: 300;
-	letter-spacing: 3px;
-  	padding-bottom: 10px;
-  	border-bottom: 1px solid #e9e9e9;
-  	margin-bottom: 20px;
- } 
-
-.link-to-project {
-	color: #fff;
-	position: absolute;
-	top: 45%;
-	left: 50%;
-	font-size: 35px;
-	margin-left: -16px;	
-}  
-
-.info-link-project {
-	color: #fff;
-	position: absolute;
-	top: 59%;
-	left: 0;
-	font-size: 13px;
-	text-align: center;
-	right: 0;
-	font-weight: 600;
-	
-}
-
-.div-img {
-	background-repeat:no-repeat;
-	display:block;
-	background-size: cover;
-	background-position-y: 50%;
-	width:100%;
-	height:360px;
-}
-
-.div-img:after {
-	padding: 6px 15px;
-	line-height: 30px;
-	color: #fff;
-	display: inline-block;
-	right: 0px;
-	position: absolute;	
- 	transition: all .6s ease-in-out;
- 	-webkit-transition: all .6s ease-out;
-	z-index:100;
-	text-transform:none;
-}
-
-.name-realizacja {
-	font-size:17px;
-	font-weight:600;
-	text-align:center;
-	text-transform:uppercase;
-} 
-.link-realizacja {	
-	font-size:13px;
-	font-weight:300;
-	text-align:center;
-}
-
-.title-box {
-    position: relative;
-    display: block;
-    overflow: hidden;
-    background: #111;
-    max-width: 100%;
-}
- 
-.title-box img {
-    display: block;
-    transition: all .6s ease-in-out;
-    width: 20em;
-}
- 
-.title-box:before, .title-box:after {
-    content: '';
-    position: absolute;
-    text-align: center;
-    transition: all .6s ease-in-out;
-    width: 100%;
-}
-
-.caption {
-	position: absolute;
-	width: 100%;
-	height: 100%;	
-	opacity:0;
-	top:0;
-    transition: all .6s ease-in-out;
-	-webkit-transition: all .6s ease-out;	
-}
-
-.caption:hover { 
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	bottom: 0px;
-	left: 0px;
-	color: #ffffff;
-	background: black;
-	text-align: center;
-	font-weight: bold;
-	opacity: 0.7;
-}
-
-.nf-realizacje h2 {
-	color: #8c8c8c;
-	font-size: 21px;
-	font-weight:400;
-	letter-spacing: 3px;
-	border-bottom: 1px solid #e9e9e9;
-	padding-bottom: 20px;
-	text-transform: uppercase;	
-}
-
-.nf-realizacje .info {
-	margin-top: 15px;
-	font-size: 18px;
-	font-weight: 300;
-	margin-bottom: 10px;
-} 
+.dv-box {margin-bottom:50px;}
 
 /*   Klient jest dla nas najwazniejszy 	*/
 
-.nf-misja-cont {
+.dv-misja-cont {
 	background-size: contain;
 	background-color: #ededed;
 }
 
-.nf-misja div {
+.dv-misja div {
 	font-size: 18px;
 	font-weight: 300;
 	margin-bottom: 85px;
 }
 
-.nf-misja-cont .container {
+.dv-misja-cont .container {
 	margin:0px auto;
 	pointer-events: none;
 	text-align: center;
 
 }
 
-.nf-misja h2 {
+.dv-misja h2 {
 	color: #ff9200;
 	margin-top: 40px;
 	margin-bottom: 25px;
@@ -666,14 +544,14 @@ a:hover { color: #acacac; text-decoration:underline;}
 	letter-spacing: 3px;
 }
 
-.nf-misja h2 span  {
+.dv-misja h2 span  {
 	color: #ff9200;
 
 }
 
 /* NASZA MISJA I KONTAKT */
 
-.nf-nasza-misja h2, .nf-kontakt h2 {
+.dv-nasza-misja h2, .dv-kontakt h2 {
 	color: #ff9200;
 	font-size: 21px;
 	font-weight: 400;
@@ -685,14 +563,14 @@ a:hover { color: #acacac; text-decoration:underline;}
 	text-transform: uppercase;
 	
 }
-.nf-nasza-misja div, .nf-kontakt div {
+.dv-nasza-misja div, .dv-kontakt div {
 	font-size: 18px;
 	font-weight:300;
 	
 }
 /* KONTAKT */
 
-.nf-kontakt-cont {
+.dv-kontakt-cont {
 	background-color:#ededed;
 	padding-top:35px;
 	width:100%;
@@ -700,12 +578,12 @@ a:hover { color: #acacac; text-decoration:underline;}
 	position:relative;
 }
 
-.nf-kontakt {
+.dv-kontakt {
 	z-index: 10;
 	position: relative;
 }
 
-.nf-kontakt-cont:after {
+.dv-kontakt-cont:after {
 	background-image: url(https://www.netfactory.pl/wp-content/uploads/2015/01/bg-kontakt.png);
 	background-position: right bottom;
 	background-repeat: no-repeat;
@@ -776,7 +654,7 @@ a:hover { color: #acacac; text-decoration:underline;}
 	padding-left: 0 !important;
 	background: none;
 }
-.nf-top-slider-new {
+.dv-top-slider-new {
 	height:100%;
 }
 
@@ -869,11 +747,11 @@ a:hover { color: #acacac; text-decoration:underline;}
 
 @media (max-width: 995px) {
 
-.col-lg-offset-4.nf-offset {
+.col-lg-offset-4.dv-offset {
 	background-image: none; 
 	}
 
-.col-lg-4.nf-offset, .col-sm-6.nf-offset {
+.col-lg-4.dv-offset, .col-sm-6.dv-offset {
 	background-image: url(../img/tlo-tablet-3.png); 
 	background-position: top center;	
 	background-repeat:no-repeat;
