@@ -101,12 +101,10 @@ $( document ).ready(function() {
 		$("html, body").animate({ scrollTop: 0 }, "slow");
 	});
 
-	$(document).ready(function() {
 		$(".link-icon").click(function() {
 		$('html, body').animate({
 		    scrollTop: $("#portfolio").offset().top -( $( 'nav' ).height() + 20 )
 		}, 2000);
 		});
-	});
 
 });
