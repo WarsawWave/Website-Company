@@ -99,25 +99,25 @@
 			classie.remove( old, 'current' );
 		}
 		classie.add( this.items[ this.current], 'current' );
-		$(this.items).children().each(function() {
+		// $(this.items).children().each(function() {
 
-	    //   var i = 0;
-	    //   var item = $(this);
-	    //   var text = $(this).text().trim();
-	    //   var reset = text.split("");
-	    //   var size = reset.length;
-	    //   var html = '';
+	 //      var i = 0;
+	 //      var item = $(this);
+	 //      var text = $(this).text().trim();
+	 //      var reset = text.split("");
+	 //      var size = reset.length;
+	 //      var html = '';
 
-	    //   item.empty();
-	    //   var txt = setInterval(function() {
-	    //     item.append(reset[i]);
-	    //     i++;
+	 //      item.empty();
+	 //      var txt = setInterval(function() {
+	 //        item.append(reset[i]);
+	 //        i++;
 	        
-	    //     if (i === size) {
-	    //       clearInterval(txt);
-	    //     }
-	    //   }, 150);
-	    // });
+	 //        if (i === size) {
+	 //          clearInterval(txt);
+	 //        }
+	 //      }, 150);
+	 //    });
 	}
 
 	window.Slideshow = Slideshow;

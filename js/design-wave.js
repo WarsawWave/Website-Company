@@ -10,7 +10,7 @@ $( document ).ready(function() {
 		$( ".box-checked" ).removeClass( 'box-checked' );
 		$( par ).removeClass( 'box' );
 		$( par ).addClass( 'box-checked' );
-		$( ".box" ).addClass( 'box-sm col-lg-6' );
+		$( ".box" ).addClass( 'box-sm col-xs-3 col-lg-6' );
 		$( ".box" ).appendTo("#other");
 		$( ".box" ).removeClass( 'box' );
 		$( par ).appendTo("#checked");
@@ -18,11 +18,11 @@ $( document ).ready(function() {
 
 	function two (par) {
 		$("html, body").animate({ scrollTop: $('#oferta-sm').offset().top -( $( 'nav' ).height() + 20 ) }, 1000);
-		$( ".box-checked" ).addClass( 'box-sm col-lg-6' );
+		$( ".box-checked" ).addClass( 'box-sm col-xs-3 col-lg-6' );
 		$( ".box-checked" ).prependTo("#other");
 		$( ".box-checked" ).removeClass( 'box-checked' );
 		$( par ).addClass( 'box-checked' );
-		$( par ).removeClass( 'box-sm col-lg-6' );
+		$( par ).removeClass( 'box-sm col-xs-3 col-lg-6' );
 		$( par ).appendTo("#checked").hide().show('slow');
 	};
 
