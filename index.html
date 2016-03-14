@@ -22,16 +22,6 @@
     <link href="css/socialIconsFont/creativeverse_social-ie7.css" rel="stylesheet">
     <link href="css/socialIconsFont/creativeverse_social-ie7-codes.css" rel="stylesheet">
 
-    <script src="js/jquery-1.12.1.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
-    <script src='js/modernizr.custom.js'></script>
-    <script src='js/wow.js'></script>
-    <script src='js/bootstrap-hover-dropdown.min.js'></script>
-    <script src='js/design-wave.js'></script>
-    <!-- <script src='js/jquery.waypoints.min.js'></script> -->
-    <!-- Do tego fajnego menu  -->
-    <script  src='js/menu.js'></script>
-    <script src='js/classie.js'></script>
   </head>
   <body style="background-position: center 0px; width: 100%; height: 100%; background-repeat: no-repeat;" >
     <div id="perspective" class="perspective effect-airbnb">
@@ -66,10 +56,12 @@
               <li class=""><a href="#">Kontakt</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right cv-social-media">
-              <a class="animated fadeIn" href="#"><li id="twitter" class="icon-twitter"></li></a>
-              <a class="animated fadeIn" href="#"><li id="facebook" class="icon-facebook"></li></a>
-              <a class="animated fadeIn" href="#"><li id="pinterest" class="fa fa-instagram" style="padding-left:10px;font-size:26px;"></li></a>
-              <a class="animated fadeIn" href="#"><li id="youtube" class="icon-youtube"></li></a>
+              <div class="social-icons">               
+                <a class="animated fadeIn" href="#"><li id="twitter" class="icon-twitter"></li></a>
+                <a class="animated fadeIn" href="#"><li id="facebook" class="icon-facebook"></li></a>
+                <a class="animated fadeIn" href="#"><li id="pinterest" class="fa fa-instagram" style="padding-left:10px;font-size:26px;"></li></a>
+                <a class="animated fadeIn" href="#"><li id="youtube" class="icon-youtube"></li></a>
+              </div>
               <div class="nav-contact">               
                 <p>Tel. 555-555-55</p>
                 <p>office@DesignWave.pl</p>
@@ -101,48 +93,7 @@
                         <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni aspernatur necessitatibus quis quaerat, voluptatibus neque voluptas placeat explicabo perspiciatis sit ducimus illo ipsum est eos aut non. Assumenda, saepe, rem.</h2>  
                       <img src="img/header/tablet.png" class="tablet" alt="">
                 </div>
-                <script src="js/classie.js"></script>
-                <script src="js/main.js"></script>
-                <script>
-                  (function() {
-                    new Slideshow( document.getElementById( 'slideshow-1' ) );
-                    setTimeout( function() {
-                      new Slideshow( document.getElementById( 'slideshow-2' ) );
-                    }, 1750 );
-                  
-                    /* Mockup responsiveness */
-                    var body = docElem = window.document.documentElement,
-                      wrap = document.getElementById( 'wrap' ),
-                      mockup = wrap.querySelector( '.mockup' ),
-                      mockupWidth = mockup.offsetWidth;
-                  
-                    scaleMockup();
-                  
-                    function scaleMockup() {
-                      var wrapWidth = wrap.offsetWidth,
-                        val = wrapWidth / mockupWidth;
-                  
-                      mockup.style.transform = 'scale3d(' + val + ', ' + val + ', 1)';
-                    }
-                    
-                    window.addEventListener( 'resize', resizeHandler );
-                  
-                    function resizeHandler() {
-                      function delayed() {
-                        resize();
-                        resizeTimeout = null;
-                      }
-                      if ( typeof resizeTimeout != 'undefined' ) {
-                        clearTimeout( resizeTimeout );
-                      }
-                      resizeTimeout = setTimeout( delayed, 50 );
-                    }
-                  
-                    function resize() {
-                      scaleMockup();
-                    }
-                  })();
-                </script>                            
+                          
               </div>
           </div>
             <a class="link-icon link-icon-content" href="#"><img src="img/header/strzalka.png" alt=""></a> 
@@ -153,6 +104,21 @@
               You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.       
             </div>
             <![endif]-->
+
+            <div id="myCanvasContainer" style="text-align:center;">
+             <canvas width="700" height="500" id="myCanvas">
+              <p>Anything in here will be replaced on browsers that support the canvas element</p>
+              <ul>
+               <li><a href="#">AngularJS</a></li>
+               <li><a href="#">HTML5</a></li>
+               <li><a href="#">CSS3</a></li>
+               <li><a href="#">PHP</a></li>
+               <li><a href="#">Wordpress</a></li>
+               <li><a href="#">Javascript</a></li>
+               <li><a href="#">JQuery</a></li>
+              </ul>
+             </canvas>
+            </div>
             <!-- Prezentacja dla roznych urzadzen -->
             <div id="tabs" style="margin-top:80px;">
               <div class="container-fluid oferta" id="oferta" style="margin-top:35px;">
@@ -339,5 +305,21 @@
     </nav>
     <a href="#" class="scrollToTop" style="display: inline;"><span class="glyphicon glyphicon-circle-arrow-up" aria-hidden="true"></span></a>
   </body>
+
+
+  <script src="js/jquery-1.12.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+  <script src='js/modernizr.custom.js'></script>
+  <script src='js/wow.js'></script>
+  <script src='js/bootstrap-hover-dropdown.min.js'></script>
+  <script src='js/design-wave.js'></script>
+  <!-- <script src='js/jquery.waypoints.min.js'></script> -->
+  <!-- Do tego fajnego menu  -->
+  <script  src='js/menu.js'></script>
+  <script src='js/classie.js'></script>
+
+  <script src="js/classie.js"></script>
+  <script src="js/main.js"></script> 
+  <script src="js/tag.js"></script> 
 </html>
 

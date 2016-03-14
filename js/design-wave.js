@@ -107,4 +107,19 @@ $( document ).ready(function() {
 		}, 2000);
 		});
 
+   if( ! $('#myCanvas').tagcanvas({
+     textColour : '#F65472',
+     outlineThickness : 1,
+     maxSpeed : 0.03,
+     depth : 1,
+     bgColour : '#1138F1',
+     bgRadius : 50,
+     padding: 10,
+     minBrightness : 0.3
+   })) {
+     // TagCanvas failed to load
+     $('#myCanvasContainer').hide();
+   }
+   // your other jQuery stuff here...
+
 });
