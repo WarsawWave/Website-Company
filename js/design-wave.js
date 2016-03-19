@@ -1,76 +1,59 @@
 $( document ).ready(function() {
 
 	// Mechanizm O Nas
-	function first (par) {
-		$( '#oferta' ).css({ 'display': 'none' });
-		$( '#oferta-sm' ).css({ 'display': 'block' });
-		$("html, body").animate({ scrollTop: $('#oferta-sm').offset().top -( $( 'nav' ).height() + 20 ) }, 1000);
+	var lastClicked;
 
-		$( ".box-checked" ).addClass( 'box-sm' );
-		$( ".box-checked" ).removeClass( 'box-checked' );
-		$( par ).removeClass( 'box' );
-		$( par ).addClass( 'box-checked' );
-		$( ".box" ).addClass( 'box-sm col-xs-3 col-lg-6' );
-		$( ".box" ).appendTo("#other");
-		$( ".box" ).removeClass( 'box' );
-		$( par ).appendTo("#checked");
-	};
+	$(document).on("click", ".circle", function() {
+	    var content = $(this).find('p:first').text(),
+	    	circles = $('.circle');
 
-	function two (par) {
-		$("html, body").animate({ scrollTop: $('#oferta-sm').offset().top -( $( 'nav' ).height() + 20 ) }, 1000);
-		$( ".box-checked" ).addClass( 'box-sm col-xs-3 col-lg-6' );
-		$( ".box-checked" ).prependTo("#other");
-		$( ".box-checked" ).removeClass( 'box-checked' );
-		$( par ).addClass( 'box-checked' );
-		$( par ).removeClass( 'box-sm col-xs-3 col-lg-6' );
-		$( par ).appendTo("#checked").hide().show('slow');
-	};
+	    $('.big-square p').html(content);
+	   
+	    $('.big-square').css({
+	      "display": "block"
+	    })
 
-	$(document).on("click", ".box", function() {
-	    first(this);
+	     $(lastClicked)
+		  .css({
+		    "border-radius": 0})
+		  .animate({
+		    "border-radius": 100}, 700);	     
+
+		$(this)
+		  .css({
+		    "border-radius": 100})
+		  .animate({
+		    borderTopLeftRadius: 0, 
+		    borderTopRightRadius: 0, 
+		    borderBottomLeftRadius: 0, 
+		    borderBottomRightRadius: 0}, 700);
+
+		var position = $(this).position(),
+			height = $(this).height(),
+			width = $(this).width();
+
+		$('.big-square')
+			.css({
+				"width": 0,
+				"height": 0,
+				"top": (position.top-height-90),
+				"left": ( position.left+ (width/2) ),	
+			})		
+			.animate({		     
+			opacity: 1, 
+			width: "100%",
+			height: 300,
+			top: 0,
+			left: 0}, 700);			
+
+		lastClicked = $(this);
+
 	});
+
 	$(document).on("click", ".box-sm", function() {
-	    two(this);
+
 	});
 
-	$( "#tabs" ).tabs();
-
-	$('.box').each(function(){
-		// For each set of tabs, we want to keep track of
-		// which tab is active and its associated content
-		var $active, $content, $links = $(this).find('a');
-
-		// If the location.hash matches one of the links, use that as the active tab.
-		// If no match is found, use the first link as the initial active tab.
-		$active = $($links.filter('[href="'+location.hash+'"]')[0] || $links[0]);
-		$active.addClass('active');
-
-		$content = $($active[0].hash);
-
-		// Hide the remaining content
-		$links.not($active).each(function () {
-		  $(this.hash).hide();
-		});
-
-		// Bind the click event handler
-		$(document).on('click', 'a', function(e){
-		  // Make the old tab inactive.
-		  $active.removeClass('active');
-		  $content.hide();
-
-		  // Update the variables with the new link and content
-		  $active = $(this);
-		  $content = $(this.hash);
-		  $content.fadeIn("slow");
-
-		  // Make the tab active.
-		  $active.addClass('active');
-		  $content.show();
-
-		  // Prevent the anchor's default click action
-		  e.preventDefault();
-		});
-	});
 
 	// Dodanie klasy do nawigacji
 	function setScrolledNav () {  
@@ -87,39 +70,24 @@ $( document ).ready(function() {
 		setScrolledNav();
 	});
 
-	//Check to see if the window is top if not then display button
-	$(window).scroll(function(){
-		if ($(this).scrollTop() > 500) {
-		  $('.scrollToTop').fadeIn();
-		} else {
-		  $('.scrollToTop').fadeOut();
-		}
-	});
+	var words = ['JQuery','AnuglarJS','Javascript','PHP','Responwywność','WebDesign','Mobilność','Strony WWW','Strony Internetowe','Projektowanie Stron','HMTL','CSS','Sklepy Internetowe','Szablony Allegro','Serwisy','Portale','CMS','Blogi','Wordpress','Wizytówka','Identyfikacja Wizualna'];
+	var colors = ["#800026", "#bd0026", "#e31a1c", "#fc4e2a", "#fd8d3c", "#feb24c", "#fed976", "#ffeda0", "#ffffcc"];
 
-	//Click event to scroll to top
-	$(document).on("click", ".scrollToTop", function() {
-		$("html, body").animate({ scrollTop: 0 }, "slow");
-	});
+	var list = new Array();
 
-		$(".link-icon").click(function() {
-		$('html, body').animate({
-		    scrollTop: $("#portfolio").offset().top -( $( 'nav' ).height() + 20 )
-		}, 2000);
-		});
+	for (var i = 0; i < 10; i++) {
+		var word = {};
+		word.text = words[Math.floor(Math.random()*words.length)]
+		word.color = colors[Math.floor(Math.random()*colors.length)]
+		var index = words.indexOf(word.text);
+		words.splice(index, 1);
+		word.weight = getRandomInt(60, 70);
+		list.push(word);
+	};
 
-   if( ! $('#myCanvas').tagcanvas({
-     textColour : '#F65472',
-     outlineThickness : 1,
-     maxSpeed : 0.03,
-     depth : 1,
-     bgColour : '#1138F1',
-     bgRadius : 50,
-     padding: 10,
-     minBrightness : 0.3
-   })) {
-     // TagCanvas failed to load
-     $('#myCanvasContainer').hide();
-   }
-   // your other jQuery stuff here...
+	// $('#tag-cloud').jQCloud(list);
 
+	function getRandomInt(min, max) {
+	  return (Math.floor(Math.random() * (max - min + 1)) + min)/100;
+	}
 });

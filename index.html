@@ -4,23 +4,19 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>DesignWave</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Perspective Page View Navigation: Transforms the page in 3D to reveal a menu" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta name="description" content="DesignWave- agencja interaktywna w sieci WEB" />
     <!-- <meta name="keywords" content="3d page, menu, navigation, mobile, perspective, css transform, web development, web design" />
       <meta name="author" content="Codrops" /> -->
     <!-- <link rel="shortcut icon" href="../favicon.ico"> FAVICON-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel='stylesheet' href='css/animate.css' type='text/css' media='all' />
     <link rel='stylesheet' href='css/component.css' type='text/css' media='all' />
     <link rel="stylesheet" href="style.css">
 
-    <!-- Social Icons -->
-    <link href="css/leaf.css" rel="stylesheet">
-    <link href="css/socialIconsFont/creativeverse_social-codes.css" rel="stylesheet">
-    <link href="css/socialIconsFont/creativeverse_social-embedded.css" rel="stylesheet">
-    <link href="css/socialIconsFont/creativeverse_social-ie7.css" rel="stylesheet">
-    <link href="css/socialIconsFont/creativeverse_social-ie7-codes.css" rel="stylesheet">
+      <!-- Optymalizacja -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.2/picturefill.min.js' async></script>
 
   </head>
   <body style="background-position: center 0px; width: 100%; height: 100%; background-repeat: no-repeat;" >
@@ -28,39 +24,23 @@
       <div class="per-zadzwon"><a href="tel:+48796018118"><b>ZADZWOŃ </b></a></div>
       <!-- =Menu -->  
       <div id="block-content" class="block-content">
-        <nav class="navbar navbar-special navbar-fixed-top  nav-main" style="z-index:100000;padding: 0px 20px;">
-          <a class="navbar-brand" href="">
-            <img src="img/logo.png" class="img-responsive dw-logo">
-            <div class="dw-brand">             
-              <span class="one">Design</span><br>
-              <span class="two">Wave</span>
-            </div>
-          </a>
+        <nav class="navbar navbar-special navbar-fixed-top  nav-main" style="z-index:100000;padding: 0px 20px;">      
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" id="showMenu"><span class="sr-only">Przełącz nawigacje</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
           </div>
           <div class="navbar-collapse collapse" id="top-nav" aria-expanded="false">
-            <ul id="menu-primary-navigation" class="nav navbar-nav dw-menu-top">
-              <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle disabled" data-toggle="dropdown" data-hover="dropdown" data-delay="200" data-close-others="true">Usługi <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li class=""><a href="#">Grafika</a></li>
-                  <li class=""><a href="#">Aplikacje</a></li>
-                  <li class=""><a href="#">Serwis</a></li>
-                </ul>
-              </li>
-              <li class=""><a href="#">Portfolio</a></li>
-              <li class=""><a href="#">Blog</a></li>
-              <li class=""><a href="#">O nas</a></li>
-              <li class=""><a href="#">Kontakt</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right cv-social-media">
+            <a class="navbar-brand" href="">
+              <img src="img/logo.png" class="img-responsive dw-logo">
+              <div class="dw-brand">             
+                <h1>Design Wave</h1>
+              </div>
+            </a>
+            <ul class="nav navbar-nav navbar-right">
               <div class="social-icons">               
-                <a class="animated fadeIn" href="#"><li id="twitter" class="icon-twitter"></li></a>
-                <a class="animated fadeIn" href="#"><li id="facebook" class="icon-facebook"></li></a>
-                <a class="animated fadeIn" href="#"><li id="pinterest" class="fa fa-instagram" style="padding-left:10px;font-size:26px;"></li></a>
-                <a class="animated fadeIn" href="#"><li id="youtube" class="icon-youtube"></li></a>
+                <a class="animated fadeIn" href="#"><img src="img/icons/tw.png" alt=""></a>
+                <a class="animated fadeIn" href="#"><img src="img/icons/fb.png" alt=""></a>
+                <a class="animated fadeIn" href="#"><img src="img/icons/inst.png" alt=""></a>
+                <a class="animated fadeIn" href="#"><img src="img/icons/yt.png" alt=""></a>
               </div>
               <div class="nav-contact">               
                 <p>Tel. 555-555-55</p>
@@ -68,232 +48,71 @@
                 <h1>Warszawa</h1>
               </div>
             </ul>
+            <ul id="menu-primary-navigation" class="nav navbar-nav dw-menu-top center-block">
+              <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle disabled" data-toggle="dropdown" data-hover="dropdown" data-delay="200" data-close-others="true">Usługi <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li class=""><a href="#">Grafika</a></li>
+                  <li class=""><a href="strony-www.html
+                    ">Strony WWW</a></li>
+                  <li class=""><a href="#">Serwis</a></li>
+                </ul>
+              </li>
+              <li class=""><a href="#">Centrum wiedzy</a></li>
+              <li class=""><a href="#">O nas</a></li>
+              <li class=""><a href="#">Kontakt</a></li>
+            </ul>
           </div>
         </nav>
       </div>
+      <!-- HEADER -->
       <div class="container-fluids">
         <div class="wrapper">
-          <div class="start" id="start">
-            <!-- Maly slider i tlo headera -->
-              <div class="header-bg" id="content-top">
-                <div class="col-xs-12 col-sm-12 col-lg-4 rectangles">               
-                  <h3>Budowanie wizerunku firmy <br>jest to jeden z kluczowych elementów <br>,,Jak Cię widzą tak cię piszą"</h3><hr>
-                    <div class="green">
-                      <img src="img/header/prostokat-green.png" alt="">
-                    </div>
-                    <div class="blue">
-                      <img src="img/header/prostokat-blue.png" alt="">
-                    </div>
-                    <div class="red">
-                      <img src="img/header/prostokat-red.png" alt="">
-                    </div>
+          <div class="start">
+              <div class="header-bg">
+                <div class="col-xs-12 col-lg-4 rectangles">
+                  <img src="img/header/kafelki-4000.png" srcset="img/header/kafelki-4000.png 2000w, img/header/kafelki-1920.png 1920w" alt="">
                 </div>
-                <div class="col-xs-12 col-sm-12 col-lg-8 devices hidden-xs hidden-sm hidden-md">
-                      <img src="img/header/laptop.png" class="laptop" alt="">
-                        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni aspernatur necessitatibus quis quaerat, voluptatibus neque voluptas placeat explicabo perspiciatis sit ducimus illo ipsum est eos aut non. Assumenda, saepe, rem.</h2>  
-                      <img src="img/header/tablet.png" class="tablet" alt="">
-                </div>
-                          
+                <div class="col-xs-12 col-lg-8" style="height:100%;">
+                  <div class="col-xs-12 col-lg-6 slogan">
+                    <h3>Budowanie wizerunku firmy <br>jest to jeden z kluczowych elementów <br>,,Jak Cię widzą tak cię piszą"</h3>
+                    <hr>
+                  </div>
+                  <div class="col-xs-12 hidden-xs hidden-sm hidden-md" style="height:100%;position:absolute;width:98%;">
+                    <div class="devices">
+                      <img src="img/header/laptop-4000.png" srcset="img/header/laptop-4000.png 2000w, img/header/laptop-1920.png 1920w" class="laptop" alt=""> 
+                      <img src="img/header/tablet-4000.png" srcset="img/header/tablet-4000.png 2000w, img/header/tablet-1920.png 1920w" class="tablet" alt="">
+                    </div>
+                  </div>
+                </div>                         
               </div>
           </div>
-            <a class="link-icon link-icon-content" href="#"><img src="img/header/strzalka.png" alt=""></a> 
           <!-- TREŚĆ -->
-          <div id="content">
-            <!--[if lt IE 8]>
-            <div class="alert alert-warning">
-              You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.       
-            </div>
-            <![endif]-->
-
-            <div id="myCanvasContainer" style="text-align:center;">
-             <canvas width="700" height="500" id="myCanvas">
-              <p>Anything in here will be replaced on browsers that support the canvas element</p>
-              <ul>
-               <li><a href="#">AngularJS</a></li>
-               <li><a href="#">HTML5</a></li>
-               <li><a href="#">CSS3</a></li>
-               <li><a href="#">PHP</a></li>
-               <li><a href="#">Wordpress</a></li>
-               <li><a href="#">Javascript</a></li>
-               <li><a href="#">JQuery</a></li>
-              </ul>
-             </canvas>
-            </div>
-            <!-- Prezentacja dla roznych urzadzen -->
-            <div id="tabs" style="margin-top:80px;">
-              <div class="container-fluid oferta" id="oferta" style="margin-top:35px;">
-                <div class="col-xs-4 col-lg-4">
-                  <div class="box">
-                    <a href="#tabs-1">
-                      <div class="circle grafika">
-                        <span class="glyphicon glyphicon-home"></span>
-                      </div>
-                      <h1>Grafika</h1>
-                    </a>
-                  </div>
-                  <div class="box">
-                    <a href="#tabs-2">
-                      <div class="circle strony-www">
-                        <span class="glyphicon glyphicon-home"></span>
-                      </div>
-                      <h1>Strony Internetowe</h1>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-xs-4 col-lg-4">
-                  <div class="box">
-                    <a href="#tabs-3">
-                      <div class="circle identyfikacja">
-                        <span class="glyphicon glyphicon-home"></span>
-                      </div>
-                      <h1>Identyfikacja Wizualna</h1>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-xs-4 col-lg-4">
-                  <div class="box">
-                    <a href="#tabs-4">
-                      <div class="circle serwis">
-                        <span class="glyphicon glyphicon-home"></span>
-                      </div>
-                      <h1>Serwis</h1>
-                    </a>
-                  </div>
-                  <div class="box">
-                    <a href="#tabs-5">
-                      <div class="circle allegro">
-                        <span class="glyphicon glyphicon-home"></span>
-                      </div>
-                      <h1>Szablony Allegro</h1>
-                    </a>
-                  </div>
-                </div>
-              </div>           
-              <div class="container-fluid" id="oferta-sm" style="display:none">
-                <div class="col-xs-12 col-lg-4" style="border-right:1px solid rgb(206, 203, 203);text-align: center;">
-                  <div class="col-lg-12" id="checked" style="height:205px;">
-                  </div>
-                  <div id="other">                                    
-                  </div> 
-                </div>
-                <div class="col-xs-12 col-lg-8">
-                  <div id="tabs-1">
-                    <h1>Opis Grafiki</h1>
-                    <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci.</p>
-                  </div>
-                  <div id="tabs-2">
-                    <h1>Opis Stron WWW</h1>
-                    <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc.</p>
-                  </div>
-                  <div id="tabs-3">
-                    <h1>Opis Identyfikacji Wizualnej</h1>
-                    <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
-                  </div>
-                  <div id="tabs-4">
-                    <h1>Opis Serwisu</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet atque repellat pariatur ut, explicabo, sed accusamus assumenda doloremque beatae similique totam quos sunt praesentium debitis, veritatis a exercitationem asperiores delectus?</p>
-                  </div>
-                  <div id="tabs-5">
-                    <h1>Opis Szablonów Allegro</h1>
-                    <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim sed cumque dolores quasi quaerat unde id provident nihil sunt amet accusamus similique, vero quia tenetur, doloremque, voluptates necessitatibus dolore, laborum.</span><span>Rem asperiores suscipit aspernatur nam, maiores reprehenderit ipsam cupiditate, enim ex nobis voluptates iure possimus hic porro quos minima vero magnam dolores tempora, ut, quibusdam soluta repudiandae minus voluptatibus dolore.</span></p>
-                  </div>
-                </div>
-              </div>
-              <hr>
-            </div>
-            <!-- Ostatnie projekty i Portfolio -->
-            <div class="contaner-fluid dv-box nopadding wow lightSpeedIn" id="portfolio">
-              <div class="row">
-                <div class="container dv-realizacje text-center">
-                  <h2 class="wow zoomIn">OSTATNIE REALIZACJE</h2>
-                  <div class="info hidden-xs wow fadeInLeft"> 
-                    Zobacz niektóre, z wielu projektów jakie mieliśmy przyjemność realizować.
-                  </div>
-                  <a class="btn-main btn-white wow fadeInRight" href="/portfolio/">Zobacz całe portfolio</a>    
-                </div>
+          <div id="content" class="container-fluid" style="z-index:-1;height:1000px;">
+            <div class="oferta">
+              <div class="big-square">
+                <p>BIG SQUARE</p>
               </div>
             </div>
-            <div class="container dv-box" id="portfolio">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, corporis, in. Enim rerum assumenda quas distinctio commodi excepturi repellat illum dolores. Sapiente provident vel aspernatur inventore accusamus ratione doloribus fuga.</p>
-            </div>
-            <div class="container-fluid nopadding dv-box dv-misja-cont">
-              <!-- Kient jest dla nas najwazniejszy, nasza misja, bla, bla, bla -->
-              <div class="container">
-                <div class="row">
-                  <div class="col-lg-7 col-lg-offset-5 dv-misja">
-                    <h2 class="wow fadeInRight">Klient jest dla nas najważniejszy</h2>
-                    <div class="info wow fadeInLeft">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aliquam accusantium aliquid esse ipsam voluptatibus iure nemo fugiat dolor, repellendus consequuntur adipisci commodi ut repellat eveniet vel. Dolores, itaque, fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro quia totam eum inventore iste magni. Optio ad ab excepturi molestiae maiores repellat dicta blanditiis amet adipisci architecto, temporibus error illum.    
-                    </div>
-                  </div>
-                </div>
+            <div class="circles">
+              <div class="circle">
+                <p>Właśnie kliknąłeś kólko PIERWSZE gdzie powinna byc ikonka Grafiki. Tu będzie się wyświetlł opis Naszych usług graficznych.</p>
+              </div>
+              <div class="circle">
+                <p>Właśnie kliknąłeś kólko DRUGIE gdzie powinna byc ikonka stron WWW. Tu będzie się wyświetlł opis Naszych usług stron WWW.</p>
+              </div>
+              <div class="circle">
+                <p>Właśnie kliknąłeś kólko TRZECIE gdzie powinna byc ikonka Identyfikacji wizualnej. Tu będzie się wyświetlł opis Naszych usług identyfikacji wizualnej.</p>
+              </div>
+              <div class="circle">
+                <p>I tak dalej.....</p>
               </div>
             </div>
-            <div class="container-fluid dv-box" id="misja">
-              <div class="container dv-nasza-misja text-center">
-                <div class="row">
-                  <h2 class="wow fadeInRight">Nasza misja</h2>
-                  <div class="info wow fadeInLeft">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ex corporis quidem dolore, aut inventore necessitatibus rerum. Repellendus porro vitae, laboriosam eius nemo reprehenderit. Deleniti in odio aliquid dolor ullam.   
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Kontakt, formularz, mapka, adres etc. -->
-            <div class="container-fluid dv-kontakt-cont nopadding" style="padding-bottom: 30px;">
-              <div class="container dv-kontakt text-center" style="">
-                <h2 class="wow fadeInRight">Kontakt</h2>
-                <div class="info wow fadeInLeft">
-                  Jeśli masz jakieś pytania, wątpliwości, propozycje współpracy, lub po prostu czegoś od nas potrzebujesz, śmiało skontaktuj się z nami. Jesteśmy otwarci na nawiązywanie różnego rodzaju współpracy i na nowe pomysły.
-                </div>
-                <div class="row">
-                  <div class="col-xs-12 col-sm-12 col-lg-4 wow fadeInLeft">
-                    <h3>Napisz do Nas</h3>
-                    <p>Tu będzie formularz kontaktowy</p>
-                  </div>
-                  <div class="col-xs-12 col-sm-12 col-lg-4 wow fadeInUp">
-                    <h3>Nasza siedziba</h3>
-                    <div>
-                      <div><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> ul. Lorem ipsum xx, xx-yyy Warszawa</div>
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1222.1401504480418!2d20.912118199999995!3d52.22012510000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecb2fd3e93b03%3A0xb8004e52239a732a!2sStrzelc%C3%B3w+1A%2C+01-348+Warszawa!5e0!3m2!1spl!2spl!4v1428649804905" width="100%" height="172" frameborder="0" style="border:0"></iframe>
-                    </div>
-                  </div>
-                  <div class="col-xs-12 col-sm-12 col-lg-4 wow fadeInRight">
-                    <h3>Kontakt</h3>
-                    <div>
-                      <div><i class="fa fa-envelope"></i> <a href="mailto:office@DesignWave.pl">office@DesignWave.pl</a></div>
-                      <div><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span><a href="tel:+48555555555"> 555 555 555</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span><a href="tel:+48333333333"> 333 333 333</a></div>
-                    </div>
-                    <h3 style="margin-top: 36px;">Dane firmy</h3>
-                    <div>
-                      DesginWave<br>
-                      ul. Lorem Ipsum xx xx-yyy Warszawa<br>
-                      Tel. 555-555-555<br>
-                      E-mail: office@DesignWave.pl<br>               
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Partnerzy - Stopka -->
-            <div class="container-fluid stopka nopadding hidden-xs">
-              <div class="container wow fadeInRight">
-                <div class="partnerzy">
-                  <h3 class="nasi-partnerzy">Nasi Partnerzy</h3>
-                  <div class="textwidget">
-                    <!-- Miejsce na partnerów -->
-                  </div>
-                </div>
-              </div>
-            </div>
-            <footer class="content-info" role="contentinfo">
-              <div class="container">
-              </div>
-            </footer>
           </div>
-        </div>
       </div>
     </div>
+
     <script src='js/modernizr.js'></script>
     <nav class="outer-nav left vertical">
       <a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
@@ -303,23 +122,18 @@
       <a href="cennik.html">Cennik</a>
       <a href="kontakt.html">Kontakt</a>
     </nav>
-    <a href="#" class="scrollToTop" style="display: inline;"><span class="glyphicon glyphicon-circle-arrow-up" aria-hidden="true"></span></a>
   </body>
 
 
-  <script src="js/jquery-1.12.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
   <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
-  <script src='js/modernizr.custom.js'></script>
-  <script src='js/wow.js'></script>
-  <script src='js/bootstrap-hover-dropdown.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-hover-dropdown/2.2.1/bootstrap-hover-dropdown.js'></script>
   <script src='js/design-wave.js'></script>
-  <!-- <script src='js/jquery.waypoints.min.js'></script> -->
-  <!-- Do tego fajnego menu  -->
-  <script  src='js/menu.js'></script>
-  <script src='js/classie.js'></script>
 
-  <script src="js/classie.js"></script>
-  <script src="js/main.js"></script> 
-  <script src="js/tag.js"></script> 
+  <!-- Tablet Menu  -->
+  <script src='js/modernizr.custom.js'></script>
+  <script  src='js/menu.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/classie/1.0.1/classie.min.js'></script>
 </html>
 
